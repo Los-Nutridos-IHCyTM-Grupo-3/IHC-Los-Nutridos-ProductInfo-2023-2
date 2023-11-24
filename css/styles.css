@@ -1,0 +1,389 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-basis: 100%;
+}
+
+nav ul li {
+    line-height: 80px;
+    text-align: center;
+    flex-basis: inherit;
+}
+
+nav ul li a {
+    color: #808080;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+li a:hover {
+    background: #5499ad;
+    color: #ffffff;
+    transition: 0.5s;
+    padding: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+section.banner {
+    background: linear-gradient(to left, rgb(255 255 255), rgb(255 255 255));
+    padding: 3rem 0;
+}
+
+.containerB {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBanner {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 75px;
+}
+
+.imgBannerIcon1 {
+    width: 60px;
+}
+
+.imgBannerIcon2 {
+    width: 55px;
+}
+
+.imgBannerIcon3 {
+    width: 60px;
+}
+
+.imgBannerProductInfo {
+    margin-right: 25px;
+}
+
+.imgContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgPeru {
+    max-width: 75%;
+}
+
+.col2 {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #325581;
+}
+
+#txtBannet {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+#txtBannet2 {
+    color: #71cc67;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#txtBannetIcon {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+.btnBanner {
+    background: #8355f7;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/*SECCIÓN SERVICIOS*/
+.services {
+    display: block;
+    padding: 3rem 0;
+}
+
+.subServicios {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+
+.subServicios h1 {
+    margin-top: 20px;
+}
+
+.containerS {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.boxS {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+
+.boxS img {
+    width: 100px;
+}
+
+h3 {
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+
+.boxS p {
+    text-align: center;
+}
+
+/*SECCIÓN PORTAFOLIO*/
+.portafolio {
+    display: block;
+    padding: 3rem 0;
+}
+
+.subportafolio {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #4c4c4c;
+}
+
+.subportafolio h1 {
+    margin-top: 20px;
+}
+
+.containerP {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.boxP {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 55px 5px rgb(0 0 0 /6%);
+}
+
+.boxP img {
+    width: 100px;
+}
+
+h3 {
+    color: #4c4c4c;
+    margin: 10px 0;
+}
+
+.boxP p {
+    text-align: center;
+}
+
+/*Pie de Pagina - Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 70px);
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+
+#inicioSection{
+    display: flex;
+    flex-basis: 100%;
+}
+
+fieldset {
+    margin-top: 10px;
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+.formulario legend {
+  font-size: 2rem;
+  color: #333;
+}
+.formulario label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+.formulario input:not([type="submit"]) ,
+.formulario select,
+.formulario textarea {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  resize: none;
+}
+.formulario textarea {
+  height: 20rem;
+}
+.formulario .forma-contacto {
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulario input[type="submit"] {
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.boton-verde {
+    background-color: #71b100;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: inline-block;
+    border: none;
+  }
+  .boton-verde:hover {
+    background-color: #619800;
+    cursor: pointer;
+  }
+
+.contactImg{
+    border-radius: 25px;
+}
+
+.registroSection {
+    width: 50vw;
+    @media (max-width: 768px) {
+        width: 100vw;
+    }
+}
+
+.registroSection div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.registroSection div img {
+    height: 300px;
+    
+}
+
+.main_social {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    gap: 5em;
+    margin-bottom: 30px;
+}
+
+.main_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.sin-borde{
+    border: none;
+}

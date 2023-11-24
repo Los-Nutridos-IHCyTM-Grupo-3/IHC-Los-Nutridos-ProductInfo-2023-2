@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Productos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ProductInfo</h1>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <div class="imgContenedor">
+                    <img src="img/ic-peru.png" class="imgPeru">
+                </div>
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>GRANOLA</h1>
+
+        <div class="saludable">
+            <img src="img/chica1.png" alt="imagen del producto">
+            
+            <div class="saludable__contenido">
+                <h1>Información Nutricional de Granola</h1>
+
+                <ul>
+                    <li><strong>Calorías:</strong> 450 kcal por cada 100 gramos</li>
+                    <li><strong>Grasas:</strong> 20 gramos por cada 100 gramos</li>
+                    <li><strong>Proteínas:</strong> 10 gramos por cada 100 gramos</li>
+                    <li><strong>Carbohidratos:</strong> 65 gramos por cada 100 gramos</li>
+                    <li><strong>Fibra:</strong> 8 gramos por cada 100 gramos</li>
+                    <li><strong>Azúcares:</strong> 12 gramos por cada 100 gramos</li>
+                </ul>
+            
+                <h2>Detalles Nutricionales</h2>
+                <table>
+                    <tr>
+                        <th>Nutriente</th>
+                        <th>Cantidad por 100g</th>
+                    </tr>
+                    <tr>
+                        <td>Calorías</td>
+                        <td>450 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas</td>
+                        <td>20 g</td>
+                    </tr>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>10 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>65 g</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra</td>
+                        <td>8 g</td>
+                    </tr>
+                    <tr>
+                        <td>Azúcares</td>
+                        <td>12 g</td>
+                    </tr>
+                </table>
+            
+                <form class="formulario">
+                    <select class="formulario__campo" >
+                        <option disabled selected>-- Seleccionar tamaño --</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" ><!--step="10" para que salte de 10 en 10-->
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <small>
+                Copyright &copy; 2023 - ProductInfo
+                <br>
+                Startup. Los Nutridos
+            </small>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
